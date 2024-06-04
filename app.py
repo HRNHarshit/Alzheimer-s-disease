@@ -37,7 +37,7 @@ st.markdown(
 )
 
 # Streamlit app title
-st.title("Alzheimer's Disease Detection")
+st.title("Alzheimer's Disease Prediction")
 st.write("Please upload an image file for Alzheimer's disease prediction.")
 
 # File uploader
