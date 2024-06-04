@@ -1,4 +1,4 @@
-# Alzheimer's Disease Detection using Machine Learning
+# Alzheimer's Disease Prediction using Machine Learning
 
 This project leverages machine learning models to detect Alzheimer's disease from medical images. By analyzing these images, the model can predict the likelihood of Alzheimer's, providing valuable insights for early diagnosis and patient care.
 
@@ -37,7 +37,7 @@ To run this project locally, follow these steps:
 
 You can access the deployed application using the following link:
 
-[Alzheimer's Disease Detection App](https://alzheimer-s-disease.streamlit.app/)
+[Alzheimer's Disease Prediction App](https://alzheimer-s-disease.streamlit.app/)
 
 ## Project Structure
 
