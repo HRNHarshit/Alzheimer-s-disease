@@ -1,6 +1,5 @@
 import streamlit as st
 import tensorflow as tf
-import cv2
 from PIL import Image
 import numpy as np
 
@@ -45,9 +44,9 @@ st.write("Please upload an image file for Alzheimer's disease prediction.")
 file = st.file_uploader("", type=["jpg", "png"])
 
 def import_and_predict(image_data, model):
-    image = np.asarray(image_data)
-    img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-    img_reshape = img[np.newaxis,...]
+    image = ImageOps.exif_transpose(image_data)
+    img = image.convert('RGB')
+    img_reshape = np.array(img)[np.newaxis, ...]
     prediction = model.predict(img_reshape)
     return prediction
 
