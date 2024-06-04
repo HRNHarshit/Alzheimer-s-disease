@@ -1,7 +1,7 @@
 import streamlit as st
 import tensorflow as tf
 import cv2
-from PIL import Image, ImageOps
+from PIL import Image
 import numpy as np
 
 # Class names
@@ -19,7 +19,7 @@ def load_model():
 # Load the model
 model = load_model()
 
-# Custom CSS to add a white background on the left and right
+# Custom CSS to add a white background
 st.markdown(
     """
     <style>
